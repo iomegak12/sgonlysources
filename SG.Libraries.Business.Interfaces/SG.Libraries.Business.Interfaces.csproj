@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\0-Azure\Demonstrations\SGProfessionalCRMAPISolution\SG.Libraries.Business.Interfaces\SG.Libraries.Business.Interfaces.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SG.Libraries.Models\SG.Libraries.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SG.Libraries.Business.Interfaces.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
